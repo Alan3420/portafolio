@@ -1,6 +1,9 @@
 # Portafolio de Alan Novas Mateo
 
 [![CI](https://github.com/Alan3420/portafolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Alan3420/portafolio/actions/workflows/ci.yml)
+[![Web](https://img.shields.io/badge/web-alan--novas--mateo.pages.dev-0f1d22?style=flat-square)](https://alan-novas-mateo.pages.dev/)
+
+**Web:** https://alan-novas-mateo.pages.dev/
 
 Web personal de portafolio de un desarrollador full-stack junior (Python + Vue 3). Presenta el proyecto principal, [Game Rank](https://github.com/Alan3420/Game-Rank), con su arquitectura de despliegue, dos proyectos secundarios, la trayectoria, el stack y el contacto.
 
@@ -115,10 +118,13 @@ python scripts/pintar.py raw/ciudad-baja.jpg raw/ciudad-baja-pintada.jpg --radio
 
 ## Despliegue
 
-Cualquier hosting estático. En Cloudflare Pages:
+Publicado en Cloudflare Pages (proyecto `alan-novas-mateo`) por subida directa con Wrangler:
 
-- Comando de compilación: `npm run build`
-- Directorio de salida: `dist`
+```bash
+npm run deploy   # compila y sube dist/ a producción
+```
+
+Requiere haber iniciado sesión con `npx wrangler login`. Sirve cualquier otro hosting estático: compilación `npm run build`, directorio de salida `dist`.
 
 ## Créditos de imágenes
 
